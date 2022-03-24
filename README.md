@@ -46,3 +46,7 @@ Then you can install:
 ```
 $ npm install -g .
 ```
+
+## License
+
+MIT
