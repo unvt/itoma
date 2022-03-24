@@ -4,7 +4,8 @@ import { serve } from '../src/commands/serve'
 import { expect } from 'chai'
 
 describe('itoma server', () => {
-  it('should start an HTTP server on the default port', async () => {
+  it('should start an HTTP server on the default port', async function () {
+    this.timeout(10_000) // it takes time for the Express server to boot sometimes.
     const x = await serve(path.join(__dirname, 'data', 'style.yml'), {
       port: '53492',
     })
