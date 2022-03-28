@@ -1,6 +1,6 @@
 {
   "name": "itoma",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ArcGIS REST API from style.yml of Charites",
   "bin": {
     "itoma": "dist/cli.js"
