@@ -1,5 +1,5 @@
 {
-  "name": "itoma",
+  "name": "@unvt/itoma",
   "version": "1.0.1",
   "description": "ArcGIS REST API from style.yml of Charites",
   "bin": {
