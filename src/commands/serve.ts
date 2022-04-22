@@ -8,7 +8,7 @@ import { parser } from '@unvt/charites/dist/lib/yaml-parser'
 import type { VectorSourceSpecification } from '@maplibre/maplibre-gl-style-spec/types'
 import { Server } from 'http'
 
-const cors = require('cors') // 21 April 2022
+const cors = require('cors') 
 
 export interface ServeOptions {
   mapboxAccessToken?: string
@@ -66,7 +66,7 @@ export async function serve(source: string, options: ServeOptions) {
   const glyphsUrl = style.glyphs ? new URL(style.glyphs) : undefined
 
   const app = express()
-  app.use(cors()) // 21 April 2022
+  app.use(cors()) 
   if (options.trustProxy) {
     app.set('trust proxy', true)
   }
