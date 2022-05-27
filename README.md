@@ -33,6 +33,22 @@ Commands:
   help [command]            display help for command
 ```
 
+### Map Preview
+Map Previews by Mapbox GL JS, MapLibre GL JS, and ArcGIS API for Javascript can be seen from http://localhost:8080 (or any specified port).
+
+### ArcGIS REST API response
+Once "itoma serve" starts, we can see the ArcGIS REST API responses from http://localhost:8080/arcgis/rest/services/{any_name}/VectorTileServer.  
+
+* index.json: http://localhost:8080/arcgis/rest/services/{any_name}/VectorTileServer/index.json
+* root.json (style): http://localhost:8080/arcgis/rest/services/{any_name}/VectorTileServer/resources/styles/root.json
+* sprites: http://localhost:8080/arcgis/rest/services/{any_name}/VectorTileServer/resources/sprites/
+* glyphs (fonts): http://localhost:8080/arcgis/rest/services/{any_name}/VectorTileServer/resources/fonts/
+* tilemap: http://localhost:8080/arcgis/rest/services/{any_name}/VectorTileServer/tilemap
+    * Please be advised that the tilemap range (of ZL) is fixed. (You may need to edit source code to adjust it for your own tile range.) 
+
+It is important to understand that ArcGIS Online now supports https protocol only (not http). When you use unvt/itoma to preview your tile with ArcGIS online, please use https protocol for localhost.
+
+
 ## Development
 
 ```
